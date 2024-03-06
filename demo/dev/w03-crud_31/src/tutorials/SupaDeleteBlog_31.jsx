@@ -1,24 +1,17 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-let api_url = 'https://szbwskgtksqzkhaokhez.supabase.co/rest/v1/card_31';
+let api_url = 'https://szbwskgtksqzkhaokhez.supabase.co/rest/v1/card_31?id=eq.14';
 
-const SupaPostBlog_31 = () => {
+const SupaDeleteBlog_31 = () => {
   const [name, setName] = useState('Liang Yu');
   const [id, setId] = useState(208410331);
   const [blogs, setBlogs] = useState([]);
 
   const fetchBlogsFromSupabase = async () => {
     try {
-      const response = await axios.post(
+      const response = await axios.delete(
         api_url,
-        {
-          id: 14,
-          title: 'Liang Yu 208410331',
-          descrip: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-          category: 'travel',
-          img: '/images/photo-1.jpg',
-        },
         {
           headers: {
             apikey:
@@ -43,7 +36,7 @@ const SupaPostBlog_31 = () => {
       {' '}
       <div className="section-title">
         {' '}
-        <h2> Post Blogs Using http </h2>{' '}
+        <h2> Delete Blogs Using http </h2>{' '}
         <h3>
           {' '}
           {name}, {id}{' '}
@@ -72,4 +65,4 @@ const SupaPostBlog_31 = () => {
     </section>
   );
 };
-export default SupaPostBlog_31;
+export default SupaDeleteBlog_31;
