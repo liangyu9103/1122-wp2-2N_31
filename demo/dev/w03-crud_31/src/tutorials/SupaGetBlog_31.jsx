@@ -22,7 +22,7 @@ const SupaClientGetBlog_31 = () => {
       }
      })
 
-      console.log('blogs data', response);
+      console.log('blogs data', response.data);
       //setBlogs(data);
     } catch (error) {
       console.log(error);
