@@ -18,9 +18,9 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-/*req«eºÝ,res«áºÝ*/
+/*reqå‰ç«¯,reså¾Œç«¯*/
 
-//get¬Ohttpªº¤èªk
+//getæ˜¯httpçš„æ–¹æ³•
 app.get('/', (req, res) => {
   res.send('hello');
 });

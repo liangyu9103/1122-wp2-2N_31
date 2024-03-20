@@ -1,7 +1,7 @@
-//"npm nanoid"®M¥ó¥Îªk " {}"
+//"npm nanoid"å¥—ä»¶ç”¨æ³• " {}"
 import { nanoid } from 'nanoid';
 
-//¦Ò¸Õ¥i¯à¦Ò ¶Ü
+//è€ƒè©¦å¯èƒ½è€ƒ å—
 export let taskList = [
   { id: nanoid(), title: 'Do W1 XXX', isDone: false },
   { id: nanoid(), title: 'Do W2 XXX', isDone: false },
