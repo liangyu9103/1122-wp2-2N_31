@@ -26,6 +26,7 @@ app.get('/api/tasks', (req, res) => {
 
 app.post('/api/tasks', (req, res) => {
   const { title } = req.body;
+  console.log('title', title);
   if (!title) {
     res.status(400).json({ msg: 'Please provide title' });
   }

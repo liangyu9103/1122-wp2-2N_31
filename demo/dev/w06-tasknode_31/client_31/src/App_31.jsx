@@ -10,12 +10,12 @@ const defaultItems = [
   { id: nanoid(), title: 'take a nap', isDone: false },
 ];
 const App_31 = () => {
-  const [items, setItems] = useState(defaultItems);
+  const [items, setItems] = useState([]);
   return (
     <section className="section-center">
       <ToastContainer position="top-center" />
       <Form_31 />
-      <Items_31 items={items} />
+      <Items_31 />
     </section>
   );
 };
