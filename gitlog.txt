@@ -1,0 +1,30 @@
+48a3e8a	liangyu9103	Wed Apr 24 21:12:42 2024 +0800	### W10-P4: Git logs of W6
+fab7062	liangyu9103	Wed Apr 24 21:11:43 2024 +0800	w10 all code
+b2f0e11	liangyu9103	Wed Apr 24 21:09:30 2024 +0800	### W10-P3: Get all blogs using route /mid1Blog_xx
+917b0a9	liangyu9103	Wed Apr 24 21:03:10 2024 +0800	### W10-P2: Add Navbar_xx with 3 menu items
+d744164	liangyu9103	Wed Apr 24 19:38:30 2024 +0800	### W10-P1: Create HomeLayout_xx for all routes
+8eef699	liangyu9103	Wed Apr 17 18:04:29 2024 +0800	 mid1 answer
+ae0bfa6	liangyu9103	Wed Apr 17 17:27:17 2024 +0800	mid1 answer
+a698318	陳亮瑜	Wed Apr 10 22:55:37 2024 +0800	w06 all code
+e448a9a	陳亮瑜	Wed Mar 27 21:27:44 2024 +0800	### W6-P3: Get all tasks from node server
+f962869	陳亮瑜	Wed Mar 20 21:34:11 2024 +0800	w5 all code
+bbc3eda	陳亮瑜	Wed Mar 20 21:31:22 2024 +0800	### W5-P4: Create new Task, deploy W5-P3 to Vercel
+6b123a3	陳亮瑜	Wed Mar 20 20:33:39 2024 +0800	### W5-P3: Deploy W5-P2 to Vercel
+44b2c3e	陳亮瑜	Wed Mar 20 20:08:23 2024 +0800	### W5-P2: Use React Query to get tasks data from Supabas
+8f0c529	陳亮瑜	Wed Mar 20 19:17:25 2024 +0800	### W5-P2: 設定 supabase client, 使使用 .env
+6a783ea	陳亮瑜	Wed Mar 20 18:39:36 2024 +0800	git log --pretty=format:%h%x09%an%x09%ad%x09%s --after=2024-03-18
+53ac96c	陳亮瑜	Thu Mar 14 18:14:23 2024 +0800	w4 all code
+7f7e721	陳亮瑜	Wed Mar 13 21:06:07 2024 +0800	### W4-P2: Server: implement POST /api/tasks
+29edc45	陳亮瑜	Wed Mar 13 19:10:10 2024 +0800	### W4-P1: Server: implement GET /api/tasks
+4373ba9	陳亮瑜	Wed Mar 6 20:51:07 2024 +0800	### W3-P5: Use SupaDeleteBlog_xx.jsx to delete blog data
+a042938	陳亮瑜	Wed Mar 6 20:49:31 2024 +0800	### W3-P4: Use SupaPatchBlog_xx.jsx to modify blog data
+38d339e	陳亮瑜	Wed Mar 6 20:23:04 2024 +0800	### W3-P3: Use SupaPostBlog_xx.jsx to add blog data
+48d2ff4	陳亮瑜	Wed Mar 6 20:19:39 2024 +0800	### W3-P2: Use SupaGetBlog_xx.jsx to get card_xx data
+ed74f0a	陳亮瑜	Wed Mar 6 20:02:41 2024 +0800	### W3-P1: Use SupaClientGetBlog_xx.jsx (supabase client) to get card_xx data
+3f01490	陳亮瑜	Wed Feb 21 21:13:28 2024 +0800	### W1-P6: Git log of W1
+9ae0ac3	陳亮瑜	Wed Feb 21 21:12:18 2024 +0800	### W1-P5:Delete a card in Supabase
+cd7151e	陳亮瑜	Wed Feb 21 20:55:50 2024 +0800	### W1-P4: Update a card in Supabase using remote photo
+07f1a32	陳亮瑜	Wed Feb 21 20:23:26 2024 +0800	### W1-P3: Create a card into card_31 table in Supabase
+39a865f	陳亮瑜	Wed Feb 21 19:52:32 2024 +0800	### W1-P2 read card_31 table in Supabase:
+99ecc61	陳亮瑜	Wed Feb 21 19:22:41 2024 +0800	### w1-P1: Get Request demo in Postman:
+a50d5a4	陳亮瑜	Wed Feb 21 18:45:57 2024 +0800	1122-wp2-2N_31
