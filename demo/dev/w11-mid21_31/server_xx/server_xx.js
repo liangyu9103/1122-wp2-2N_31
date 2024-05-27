@@ -25,13 +25,20 @@ app.get('/', (req, res) => {
 ********************
  */
 
-app.get('/api/blogs', (req, res) => {});
+app.get('/api/blogs', (req, res) => {
+  res.json({ blogList_xx });
+});
 
 app.post('/api/blogs', (req, res) => {});
 
 app.patch('/api/blogs/:id', (req, res) => {});
 
-app.delete('/api/blogs/:id', (req, res) => {});
+app.delete('/api/blogs/:id', (req, res) => {
+  const { id } = req.params;
+  blogList_xx = blogList_xx.filter((item) => item.id != id);
+  console.log('blogList_xx', blogList_xx);
+  res.json({ msg: 'task removed' });
+});
 
 /*
 ********************
@@ -66,8 +73,8 @@ app.patch('/api/tasks/:id', (req, res) => {
 
 app.delete('/api/tasks/:id', (req, res) => {
   const { id } = req.params;
-  taskList = taskList.filter((item) => item.id !== id);
-  res.json({ msg: 'task removed' });
+  blogList_xx = taskList.filter((item) => item.id !== id);
+  res.json({ msg: 'blog remove' });
 });
 
 const port = process.env.PORT || 5000;
