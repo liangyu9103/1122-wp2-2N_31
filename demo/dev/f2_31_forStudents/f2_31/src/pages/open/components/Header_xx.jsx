@@ -22,9 +22,9 @@ const Header_xx = () => {
               <li>
                 <Link
                   className='text-slate-500 p-3 hover:bg-slate-200 transition-colors'
-                  to='/cabins_xx'
+                  to='/cabins_31'
                 >
-                  Cabins_xx
+                  Cabins_31
                 </Link>
               </li>
               <li>

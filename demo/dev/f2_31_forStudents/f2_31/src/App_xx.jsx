@@ -15,7 +15,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import {
   Account_xx,
   Bookings_xx,
-  Cabins_xx,
+  Cabins_31,
   Dashboard_31,
   Login_xx,
   PageNotFound_xx,
@@ -53,6 +53,10 @@ const router = createBrowserRouter([
     element: <Login_xx />,
   },
   {
+    path: '/cabins',
+    element: <Cabins_31 />,
+  },
+  {
     path: '/',
     element: (
       <ProtectedRoute>
@@ -72,10 +76,10 @@ const router = createBrowserRouter([
         path: 'bookings/:bookingId',
         element: <Bookings_xx />,
       },
-      {
-        path: 'cabins',
-        element: <Cabins_xx />,
-      },
+      // {
+      //   path: 'cabins',
+      //   element: <Cabins_31 />,
+      // },
       {
         path: 'users',
         element: <NewUsers_xx />,
