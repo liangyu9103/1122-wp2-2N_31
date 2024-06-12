@@ -1,9 +1,9 @@
-import React from "react";
-import styled, { StyleSheetManager } from "styled-components";
-import isPropValid from "@emotion/is-prop-valid";
-import LoginForm from "../features/authentication/LoginForm";
-import Logo from "../ui/Logo";
-import Heading from "../ui/Heading";
+import React from 'react';
+import styled, { StyleSheetManager } from 'styled-components';
+import isPropValid from '@emotion/is-prop-valid';
+import LoginForm from '../features/authentication/LoginForm';
+import Logo from '../ui/Logo';
+import Heading from '../ui/Heading';
 
 const LoginLayout = styled.main`
   min-height: 100vh;
@@ -15,16 +15,16 @@ const LoginLayout = styled.main`
   background-color: var(--color-grey-50);
 `;
 
-function Login_40() {
+function Login_31() {
   return (
     <StyleSheetManager shouldForwardProp={isPropValid}>
       <LoginLayout>
-        <Logo /> 
-        <Heading as="h4">Log in to your account</Heading>
+        <Logo />
+        <Heading as='h4'>Log in to your account</Heading>
         <LoginForm />
       </LoginLayout>
     </StyleSheetManager>
   );
 }
 
-export default Login_40;
+export default Login_31;

@@ -5,7 +5,7 @@ import { Toaster } from 'react-hot-toast';
 
 import AppLayout from './ui/AppLayout';
 import LandingStatic from './pages/open/pages/LandingStatic_xx';
-import Landing_40 from './pages/open/pages/Landing_40';
+import Landing_31 from './pages/open/pages/Landing_31';
 
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -31,11 +31,11 @@ const queryClient = new QueryClient({
 const router = createBrowserRouter([
   {
     path: '/landing',
-    element: <Landing_40 />,
+    element: <Landing_31 />,
   },
   {
     index: '/',
-    element: <Landing_40 />,
+    element: <Landing_31 />,
   },
   {
     path: '/login',
@@ -81,7 +81,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App_40 = () => {
+const App_31 = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <GlobalStyles />
@@ -111,4 +111,4 @@ const App_40 = () => {
   );
 };
 
-export default App_40;
+export default App_31;

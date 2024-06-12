@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { isFuture, isPast, isToday } from "date-fns";
-import supabase from "../services/supabase";
-import Button from "../ui/Button";
-import { subtractDates } from "../utils/helpers";
+import { useState } from 'react';
+import { isFuture, isPast, isToday } from 'date-fns';
+import supabase from '../services/supabase';
+import Button from '../ui/Button';
+import { subtractDates } from '../utils/helpers';
 
-import { bookings } from "./data-bookings";
-import { cabins } from "./data-cabins";
-import { guests } from "./data-guests";
+import { bookings } from './data-bookings';
+import { cabins } from './data-cabins';
+import { guests } from './data-guests';
 
 import { toast } from 'react-hot-toast';
 
@@ -18,41 +18,41 @@ import { toast } from 'react-hot-toast';
 // };
 
 async function deleteGuests() {
-  const { error } = await supabase.from("guests_xx").delete().gt("id", 0);
+  const { error } = await supabase.from('guests_xx').delete().gt('id', 0);
   if (error) console.log(error.message);
 }
 
 async function deleteCabins() {
-  const { error } = await supabase.from("cabins_xx").delete().gt("id", 0);
+  const { error } = await supabase.from('cabins_xx').delete().gt('id', 0);
   if (error) console.log(error.message);
 }
 
 async function deleteBookings() {
-  const { error } = await supabase.from("bookings_xx").delete().gt("id", 0);
+  const { error } = await supabase.from('bookings_xx').delete().gt('id', 0);
   if (error) console.log(error.message);
 }
 
 async function createGuests() {
-  const { error } = await supabase.from("guests_xx").insert(guests);
+  const { error } = await supabase.from('guests_xx').insert(guests);
   if (error) console.log(error.message);
 }
 
 async function createCabins() {
-  const { error } = await supabase.from("cabins_xx").insert(cabins);
+  const { error } = await supabase.from('cabins_xx').insert(cabins);
   if (error) console.log(error.message);
 }
 
 async function createBookings() {
   // Bookings need a guestId and a cabinId. We can't tell Supabase IDs for each object, it will calculate them on its own. So it might be different for different people, especially after multiple uploads. Therefore, we need to first get all guestIds and cabinIds, and then replace the original IDs in the booking data with the actual ones from the DB
   const { data: guestsIds } = await supabase
-    .from("guests_xx")
-    .select("id")
-    .order("id");
+    .from('guests_xx')
+    .select('id')
+    .order('id');
   const allGuestIds = guestsIds.map((cabin) => cabin.id);
   const { data: cabinsIds } = await supabase
-    .from("cabins_xx")
-    .select("id")
-    .order("id");
+    .from('cabins_xx')
+    .select('id')
+    .order('id');
   const allCabinIds = cabinsIds.map((cabin) => cabin.id);
 
   const finalBookings = bookings.map((booking) => {
@@ -70,19 +70,19 @@ async function createBookings() {
       isPast(new Date(booking.endDate)) &&
       !isToday(new Date(booking.endDate))
     )
-      status = "checked-out";
+      status = 'checked-out';
     if (
       isFuture(new Date(booking.startDate)) ||
       isToday(new Date(booking.startDate))
     )
-      status = "unconfirmed";
+      status = 'unconfirmed';
     if (
       (isFuture(new Date(booking.endDate)) ||
         isToday(new Date(booking.endDate))) &&
       isPast(new Date(booking.startDate)) &&
       !isToday(new Date(booking.startDate))
     )
-      status = "checked-in";
+      status = 'checked-in';
 
     return {
       ...booking,
@@ -98,7 +98,7 @@ async function createBookings() {
 
   console.log(finalBookings);
 
-  const { error } = await supabase.from("bookings_xx").insert(finalBookings);
+  const { error } = await supabase.from('bookings_xx').insert(finalBookings);
   if (error) console.log(error.message);
 }
 
@@ -107,22 +107,22 @@ function Uploader() {
 
   async function uploadAll() {
     try {
-    setIsLoading(true);
-    // Bookings need to be deleted FIRST
-    await deleteBookings();
-    await deleteGuests();
-    await deleteCabins();
-    toast.success('Success deleting booking_40, cabins_40, guests_40')
+      setIsLoading(true);
+      // Bookings need to be deleted FIRST
+      await deleteBookings();
+      await deleteGuests();
+      await deleteCabins();
+      toast.success('Success deleting booking_31, cabins_31, guests_31');
 
-    // Bookings need to be created LAST
-    await createGuests();
-    await createCabins();
-    await createBookings();
-    toast.success('Success creating booking_40, cabins_40, guests_40')
+      // Bookings need to be created LAST
+      await createGuests();
+      await createCabins();
+      await createBookings();
+      toast.success('Success creating booking_31, cabins_31, guests_31');
 
-    setIsLoading(false);
-  } catch (error) {
-    toast.error('Error on uploading');
+      setIsLoading(false);
+    } catch (error) {
+      toast.error('Error on uploading');
     }
   }
 
@@ -136,14 +136,14 @@ function Uploader() {
   return (
     <div
       style={{
-        marginTop: "auto",
-        backgroundColor: "#e0e7ff",
-        padding: "8px",
-        borderRadius: "5px",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        gap: "8px",
+        marginTop: 'auto',
+        backgroundColor: '#e0e7ff',
+        padding: '8px',
+        borderRadius: '5px',
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px',
       }}
     >
       <h3>SAMPLE DATA</h3>

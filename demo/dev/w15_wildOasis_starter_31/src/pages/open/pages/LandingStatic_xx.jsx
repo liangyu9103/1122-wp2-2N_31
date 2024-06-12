@@ -9,10 +9,18 @@ const LandingStatic = () => {
             <div className='flex justify-between items-center max-w-7xl mx-auto'>
               <Link className='flex items-center gap-4 z-10' to='/'>
                 <img width='48px' height='36px' src='/logo.webp' />
-                <span>The Wild Oasis (211410740)</span>
+                <span>The Wild Oasis (Liang yu,208410331)</span>
               </Link>
               <nav className='z-10 text-xl'>
                 <ul className='flex gap-16 items-center'>
+                  <li>
+                    <Link
+                      className='hover:text-accent-400 transition-colors'
+                      to='/landing'
+                    >
+                      Home_31
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       className='hover:text-accent-400 transition-colors'
