@@ -7,7 +7,7 @@ import AppLayout from './ui/AppLayout';
 import ProtectedRoute from './ui/ProtectedRoute';
 import LandingStatic_xx from './pages/open/pages/LandingStatic_xx';
 import Landing_xx from './pages/open/pages/Landing_xx';
-import About_xx from './pages/open/pages/About_xx';
+import About_31 from './pages/open/pages/About_31';
 import CabinDetails_xx from './pages/open/pages/CabinDetails_xx';
 
 import GlobalStyles from './styles/GlobalStyles';
@@ -45,8 +45,8 @@ const router = createBrowserRouter([
     element: <CabinDetails_xx />,
   },
   {
-    path: '/about_xx',
-    element: <About_xx />,
+    path: '/about_31',
+    element: <About_31 />,
   },
   {
     path: '/login',
