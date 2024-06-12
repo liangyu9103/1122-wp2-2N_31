@@ -13,7 +13,7 @@ import {
   Account_xx,
   Bookings_xx,
   Cabins_xx,
-  Dashboard_xx,
+  Dashboard_31,
   Login_xx,
   PageNotFound_xx,
   Settings_xx,
@@ -47,11 +47,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Dashboard_xx />,
+        element: <Dashboard_31 />,
       },
       {
         path: 'dashboard',
-        element: <Dashboard_xx />,
+        element: <Dashboard_31 />,
       },
       {
         path: 'bookings',
